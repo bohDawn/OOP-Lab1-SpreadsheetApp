@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SpreadsheetEngine</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />
+    <PackageReference Include="Antlr4BuildTasks" Version="12.8" PrivateAssets="all" />
+    <Antlr4 Include="LabCalculator.g4">
+      <Package>SpreadsheetEngine</Package>
+      <Visitor>true</Visitor>
+      <Listener>false</Listener>
+    </Antlr4>
+  </ItemGroup>
+
+</Project>
